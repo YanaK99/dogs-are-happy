@@ -1,7 +1,7 @@
 {
   "extends": ["react-app",
               "react-app/jest",
-              "prettier",
+              "plugin:prettier/recommended",
               "plugin:react-hooks/recommended",
               "airbnb",
               "airbnb/hooks",
@@ -28,6 +28,12 @@
     "quotes": ["error", "double"],
     "react/react-in-jsx-scope": "off",
     "semi": ["error", "always"],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "import/order": [
       2,
       {
