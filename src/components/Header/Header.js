@@ -1,17 +1,15 @@
 import React from "react";
 import "./Header.css";
+import Button from "@mui/material/Button";
 
 const Header = () => {
     return (
-        <div className="wrapper">
-            <div className="container mt-3">
-                <h1>
-                    Dogs Are Happy
-                    <button className="btn btn-outline-warning btn-lg header-button">
-                        Button
-                    </button>
-                </h1>
-            </div>
+        <div className="header">
+            <div className="header-item" />
+            <h1>Dogs Are Happy</h1>
+            <Button className="header-button header-item" variant="contained">
+                Contained
+            </Button>
         </div>
     );
 };

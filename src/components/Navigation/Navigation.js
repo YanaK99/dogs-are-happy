@@ -11,6 +11,7 @@ const Navigation = () => {
     const closeNav = () => {
         setIsOpen(false);
     };
+
     return (
         <>
             {isOpen ? (

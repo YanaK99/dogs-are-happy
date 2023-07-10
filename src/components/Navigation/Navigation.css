@@ -1,6 +1,7 @@
 .navigation-span {
     position: absolute;
     z-index: 10;
+    top: 2%;
     left: 7%;
     cursor: pointer;
     font-size: 35px;
@@ -19,6 +20,7 @@
     width: 250px;
     height: 100%;
     padding-top: 70px;
+    padding-left: 20px;
     background-color: #ffc107;
     overflow-x: hidden;
     transition: 0.5s;

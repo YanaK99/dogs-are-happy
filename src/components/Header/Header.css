@@ -1,8 +1,9 @@
-.container {
+.header {
     position: relative;
     display: flex;
-    max-width: 1280px;
-    justify-content: center;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 
 h1 {
@@ -10,8 +11,7 @@ h1 {
     align-items: center;
 }
 
-.header-button {
-    position: absolute;
-    top: 4px;
-    right: 13px;
+.header-item {
+    width: 130px;
+    height: 50px;
 }
