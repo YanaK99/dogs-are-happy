@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navigation.css";
+import { NavigationSpan, Sidenav } from "./styled";
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,19 +15,15 @@ const Navigation = () => {
     return (
         <>
             {isOpen ? (
-                <div id="mySidenav" className="sidenav">
-                    <a className="closebtn" onClick={closeNav}>
-                        &times;
-                    </a>
+                <Sidenav>
+                    <a onClick={closeNav}>&times;</a>
                     <a href="#">My page</a>
                     <a href="#">My friend</a>
                     <a href="#">News</a>
                     <a href="#">Settings</a>
-                </div>
+                </Sidenav>
             ) : (
-                <span className={"navigation-span"} onClick={openNav}>
-                    &#9776;{" "}
-                </span>
+                <NavigationSpan onClick={openNav}>&#9776; </NavigationSpan>
             )}
         </>
     );
