@@ -14,9 +14,9 @@
     "scss/at-rule-no-unknown": true,
     "prettier/prettier": true,
     "import-notation": null,
-    "selector-class-pattern": null,
     "no-descending-specificity": null,
     "declaration-block-no-redundant-longhand-properties": null,
-    "selector-id-pattern": null
+    "selector-id-pattern": null,
+    "selector-class-pattern": null
   }
 }

@@ -1,0 +1,49 @@
+.navigation-span {
+    position: absolute;
+    z-index: 10;
+    top: 2%;
+    left: 7%;
+    cursor: pointer;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+.navigation-span:hover {
+    color: gray;
+}
+
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding-top: 70px;
+    padding-left: 20px;
+    background-color: #ffc107;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    display: block;
+    padding: 8px 8px 8px 0;
+    color: #1d1a1a;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 50px;
+}
