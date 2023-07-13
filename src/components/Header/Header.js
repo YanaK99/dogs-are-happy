@@ -1,16 +1,13 @@
 import React from "react";
-import "./Header.css";
-import Button from "@mui/material/Button";
+import { HeaderItem, HeaderWrapper, Button } from "./styled";
 
 const Header = () => {
     return (
-        <div className="header">
-            <div className="header-item" />
+        <HeaderWrapper>
+            <HeaderItem />
             <h1>Dogs Are Happy</h1>
-            <Button className="header-button header-item" variant="contained">
-                Contained
-            </Button>
-        </div>
+            <Button variant="contained">Contained</Button>
+        </HeaderWrapper>
     );
 };
 

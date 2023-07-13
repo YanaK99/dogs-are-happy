@@ -1,14 +1,14 @@
 import React from "react";
-import "./App.css";
 import { Header } from "./components/Header";
 import { Navigation } from "./components/Navigation";
+import { Container } from "./styled";
 
 function App() {
     return (
-        <div className="container">
+        <Container>
             <Navigation />
             <Header />
-        </div>
+        </Container>
     );
 }
 
