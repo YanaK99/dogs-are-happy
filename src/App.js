@@ -7,6 +7,7 @@ import MyPage from "./pages/MyPage";
 import MyFriend from "./pages/MyFriend";
 import News from "./pages/News";
 import Settings from "./pages/Settings";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/myfriend" element={<MyFriend />} />
                 <Route path="/news" element={<News />} />
                 <Route path="/settings" element={<Settings />} />
+                <Route path="*" element={<ErrorPage />} />
             </Routes>
         </Container>
     );
