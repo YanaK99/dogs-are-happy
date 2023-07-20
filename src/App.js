@@ -11,9 +11,9 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import ThemeContext from "./context/ThemeContext";
 
 function App() {
-    const ctx = useContext(ThemeContext);
+    const { darkMode, toggleMode } = useContext(ThemeContext);
     return (
-        <Wrapper $mode={ctx.darkMode}>
+        <Wrapper $mode={darkMode}>
             <Container>
                 <>
                     <Navigation />
@@ -28,9 +28,10 @@ function App() {
                     </Routes>
                 </>
             </Container>
-            <ThemeButton onClick={ctx.toggleMode}>
-                {ctx.darkMode ? "Light" : "Dark"}
-            </ThemeButton>
+            <ThemeButton
+                onClick={toggleMode}
+                children={darkMode ? "Light" : "Dark"}
+            />
         </Wrapper>
     );
 }

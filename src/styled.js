@@ -6,8 +6,8 @@ export const Container = styled.div`
     height: 100vh;
 `;
 export const Wrapper = styled.div`
-    background-color: ${(props) => (props.$mode ? "#888" : "#fff")};
-    color: ${(props) => (props.$mode ? "whitesmoke" : "#000")};
+    background-color: ${(properties) => (properties.$mode ? "#888" : "#fff")};
+    color: ${(properties) => (properties.$mode ? "whitesmoke" : "#000")};
 `;
 
 // export const GlobalStyle = createGlobalStyle`

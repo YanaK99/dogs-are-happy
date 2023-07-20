@@ -8,6 +8,7 @@
               "@eslint-recommended"],
   "plugins": ["prettier", "react-hooks"],
   "rules": {
+    "react/no-children-prop": "off",
     "react/no-unknown-property": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "react/jsx-props-no-spreading": "off",
