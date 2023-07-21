@@ -32,14 +32,14 @@ export const PatchImageBox = styled.div`
         }
         &:last-child {
             top: -150px;
-            right: -105px;
+            right: -118px;
         }
         &:nth-child(2) {
             bottom: -324px;
             left: -20px;
         }
         &:nth-child(3) {
-            right: -105px;
+            right: -118px;
             bottom: -324px;
             transform: rotate(90deg);
         }
