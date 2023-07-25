@@ -1,58 +1,15 @@
 import styled from "styled-components";
-import AvatarPhoto from "../../images/Avatar.jpg";
-import PatchImage from "../../images/patch.png";
-import Paws from "../../images/paw.png";
 
 export const InfoContainer = styled.div`
     display: flex;
-
-    justify-content: center;
-    padding: 15px 10px;
+    width: 75%;
+    margin: 0 auto;
+    align-items: center;
+    position: relative;
+    padding: 15px 10px 30px 10px;
     outline: none;
     background: #f3eedb;
-`;
-
-export const PatchImageBox = styled.div`
-    position: relative;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    > div {
-        background: url(${PatchImage});
-        height: 60px;
-        width: 60px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        &:first-child {
-            top: -150px;
-            transform: rotate(90deg);
-            left: -20px;
-        }
-        &:last-child {
-            top: -150px;
-            right: -118px;
-        }
-        &:nth-child(2) {
-            bottom: -324px;
-            left: -20px;
-        }
-        &:nth-child(3) {
-            right: -118px;
-            bottom: -324px;
-            transform: rotate(90deg);
-        }
-    }
-`;
-
-export const InfoContent = styled.div`
-    position: relative;
-    width: 90%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-bottom: 30px;
 `;
 
 export const PhotoContainer = styled.div`
@@ -60,7 +17,6 @@ export const PhotoContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 78px;
 
     > span {
         color: #c4741d;
@@ -70,15 +26,12 @@ export const PhotoContainer = styled.div`
         letter-spacing: 1.5px;
     }
 `;
-export const PhotoImage = styled.div`
-    background: url(${AvatarPhoto});
+export const PhotoImage = styled.img`
     border-radius: 50%;
     height: 200px;
     width: 200px;
     overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    object-fit: cover;
 `;
 export const PersonalInfo = styled.div`
     display: flex;
@@ -97,13 +50,10 @@ export const PersonalInfo = styled.div`
         position: relative;
     }
 `;
-export const PawsImage = styled.div`
-    background: url(${Paws});
+export const PawsImage = styled.img`
     height: 100px;
     width: 100px;
     position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    object-fit: cover;
     right: 25px;
 `;

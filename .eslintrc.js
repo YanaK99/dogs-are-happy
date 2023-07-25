@@ -3,24 +3,39 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    extends: ["eslint:recommended", "plugin:react/recommended"],
+    parserOptions: {
+        parser: "@babel/eslint-parser",
+        requireConfigFile: false,
+        ecmaVersion: 2020,
+        sourceType: "module",
+    },
+    extends: [
+        "eslint-config-airbnb",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+    ],
     overrides: [
         {
             env: {
                 node: true,
             },
             files: [".eslintrc.{js,cjs}"],
-            parserOptions: {
-                sourceType: "script",
-            },
         },
     ],
-    parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-    },
-    plugins: ["react"],
+
+    plugins: ["react", "react-hooks", "jsx-a11y", "import"],
     rules: {
+        "react/jsx-no-constructed-context-values": "off",
+        "react/function-component-definition": "off",
+        "arrow-body-style": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "linebreak-style": "off",
+        "consistent-return": "off",
+        "operator-linebreak": "off",
         "react/no-children-prop": "off",
         "react/no-unknown-property": "off",
         "jsx-a11y/no-noninteractive-element-interactions": "off",

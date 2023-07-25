@@ -1,19 +1,11 @@
 import React from "react";
-import { MainPage, PageWrapper } from "./styled";
-import { Status } from "../../components/Status";
-import { Account } from "../../components/Account";
+import { PageWrapper } from "./styled";
+import { AccountInfo } from "../../components/AccountInfo";
 
 const MyPage = () => (
-    <div>
-        <MainPage>
-            <PageWrapper>
-                <div>
-                    <Status />
-                    <Account />
-                </div>
-            </PageWrapper>
-        </MainPage>
-    </div>
+    <PageWrapper>
+        <AccountInfo />
+    </PageWrapper>
 );
 
 export default MyPage;

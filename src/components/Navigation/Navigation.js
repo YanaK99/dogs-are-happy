@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { NavigationSpan, Sidenav } from "./styled";
 import { Link } from "react-router-dom";
+import { NavigationSpan, Sidenav } from "./styled";
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
