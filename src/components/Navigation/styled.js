@@ -10,9 +10,10 @@ export const Sidenav = styled.ul`
     margin-top: 0;
     padding-top: 70px;
     padding-left: 50px;
-    background-color: #ffc107;
+    background-color: #d5b65b;
     overflow-x: hidden;
     transition: 0.5s;
+
     > li {
         &:first-child {
             position: absolute;
@@ -21,13 +22,16 @@ export const Sidenav = styled.ul`
             margin-left: 50px;
             cursor: pointer;
             font-size: 50px;
+
             &:hover {
                 color: #f1f1f1;
             }
         }
     }
+
     > li {
         list-style: none;
+
         a {
             display: block;
             padding: 8px 8px 8px 0;
@@ -35,6 +39,7 @@ export const Sidenav = styled.ul`
             font-size: 25px;
             text-decoration: none;
             transition: 0.3s;
+
             &:hover {
                 color: #f1f1f1;
             }

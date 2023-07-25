@@ -1,9 +1,11 @@
 import React from "react";
+import { PageWrapper } from "./styled";
+import { AccountInfo } from "../../components/AccountInfo";
 
 const MyPage = () => (
-    <>
-        <h2>My page</h2>
-    </>
+    <PageWrapper>
+        <AccountInfo />
+    </PageWrapper>
 );
 
 export default MyPage;
