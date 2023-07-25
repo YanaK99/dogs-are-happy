@@ -5,12 +5,13 @@ import { AccountWrapper, Patch } from "./styled";
 import PatchImg from "../../images/patch.png";
 
 const AccountInfo = () => {
+    const PATCH_COUNT = 4;
+    const patches = Array.from({ length: PATCH_COUNT }, (_, i) => (
+        <Patch key={i} index={i} src={PatchImg} alt="cover" />
+    ));
     return (
         <AccountWrapper>
-            <Patch index={0} src={PatchImg} alt="cover" />
-            <Patch index={1} src={PatchImg} alt="cover" />
-            <Patch index={2} src={PatchImg} alt="cover" />
-            <Patch index={3} src={PatchImg} alt="cover" />
+            {patches}
             <Status />
             <Account />
         </AccountWrapper>
